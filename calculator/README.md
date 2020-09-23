@@ -23,42 +23,40 @@ The following commands will depend with what you want to do
 
 if you want to add run
 ```bash
-iex -S mix
 Calculator.add(pid, value)
 ```
 
 if you want to substract run
 ```bash
-iex -S mix
 Calculator.substract(pid, value)
 ```
 
 if you want to divide run
 ```bash
-iex -S mix
 Calculator.divide(pid, value)
 ```
 
 if you want to multiply run
 ```bash
-iex -S mix
 Calculator.multiply(pid, value)
 ```
 if you want to check the cuurent value run
 ```bash
-iex -S mix
 Calculator.value(pid)
 ```
 
 *for the GenServer approach run*
 
 ```bash
-iex -S mix
-pid=Gen.Calculator.start_link
+Gen.Calculator.start_link
 ```
-
-The function for the mathematical operator are the same, just replace Calculator with Gen.Calculator
-
+*The function for the mathematical operator are the same, just replace Calculator with Gen.Calculator*
+*and when running the function ommit the pid.*
+for example, for addition run 
+```bash
+Gen.calculator.add(value)
+```
+*and follow the same pattern for the other operators*
 
 Note that value is a custom number that you will enter
 
