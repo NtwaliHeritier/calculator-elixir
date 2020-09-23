@@ -48,19 +48,17 @@ Calculator.value(pid)
 *for the GenServer approach run*
 
 ```bash
-Gen.Calculator.start_link
+Supervisor.Calculator.start_link
 ```
 *The function for the mathematical operator are the same, just replace Calculator with Gen.Calculator*
 *and when running the function ommit the pid.*
 for example, for addition run 
 ```bash
-Gen.calculator.add(value)
+Gen.Calculator.add(value)
 ```
 *and follow the same pattern for the other operators*
 
 Note that value is a custom number that you will enter
-
-### Prerequisites
 
 - Ruby
 
