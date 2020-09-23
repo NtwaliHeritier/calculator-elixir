@@ -11,11 +11,14 @@ Additional description about the project and its features.
 ## Getting Started
 
 **Run the code demonstrations below**
- 
+
+*for the spawn approach use*
+
 ```bash
 iex -S mix
 pid=Calculator.start
 ```
+
 The following commands will depend with what you want to do
 
 if you want to add run
@@ -46,6 +49,16 @@ if you want to check the cuurent value run
 iex -S mix
 Calculator.value(pid)
 ```
+
+*for the GenServer approach run*
+
+```bash
+iex -S mix
+pid=Gen.Calculator.start_link
+```
+
+The function for the mathematical operator are the same, just replace Calculator with Gen.Calculator
+
 
 Note that value is a custom number that you will enter
 
