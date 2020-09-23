@@ -1,6 +1,6 @@
 defmodule Calculator do
   def start do
-    spawn(fn->loop(0) end)
+    spawn(fn -> loop(0) end)
   end
 
   defp loop(currentVal) do
