@@ -2,27 +2,27 @@ defmodule Gen.Calculator do
     use GenServer
     #Client
     def start_link do
-        GenServer.start_link(__MODULE__, 0)
+        GenServer.start_link(__MODULE__, 0, name: :calc)
     end
 
-    def value(pid) do
-        GenServer.call(pid, :value)
+    def value do
+        GenServer.call(:calc, :value)
     end
 
-    def add(pid, value) do
-        GenServer.cast(pid, {:add, value})
+    def add(value) do
+        GenServer.cast(:calc, {:add, value})
     end
 
-    def substract(pid, value) do
-        GenServer.cast(pid, {:substract, value})
+    def substract(value) do
+        GenServer.cast(:calc, {:substract, value})
     end
 
-    def multiply(pid, value) do
-        GenServer.cast(pid, {:multiply, value})
+    def multiply(value) do
+        GenServer.cast(:calc, {:multiply, value})
     end 
 
-    def divide(pid, value) do
-        GenServer.cast(pid, {:divide, value})
+    def divide(value) do
+        GenServer.cast(:calc, {:divide, value})
     end
 
     #Server
