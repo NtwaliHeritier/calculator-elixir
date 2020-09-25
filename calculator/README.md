@@ -60,8 +60,6 @@ Gen.Calculator.add(value)
 
 Note that value is a custom number that you will enter
 
-- Ruby
-
 ## Setup
 
 To run this project locally, please ensure you have Elixir installed on your machine, then clone this repository by running.
